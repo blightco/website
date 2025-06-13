@@ -1,0 +1,84 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  direction: rtl; /* للكتابة من اليمين لليسار */
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #0055aa;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  color: #003366;
+}
+
+/* حاوية الكروت (التمرير الأفقي) */
+.services-container {
+  display: flex;
+  flex-wrap: nowrap; /* لمنع الالتفاف */
+  overflow-x: auto; /* تفعيل التمرير الأفقي */
+  gap: 20px;
+  padding: 20px;
+  background-color: #e9f0ff;
+  scroll-behavior: smooth; /* تمرير سلس */
+}
+
+/* شكل الكرت */
+.service-card {
+  flex: 0 0 auto; /* حجم ثابت وعدم تمدد */
+  width: 300px;
+  background-color: #fff;
+  border: 2px solid #0055aa;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0, 85, 170, 0.2);
+  text-align: center;
+  color: #003366;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 85, 170, 0.4);
+}
+
+.service-card img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #003366;
+  color: white;
+  margin-top: 30%;
+}

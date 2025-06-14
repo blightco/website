@@ -43,17 +43,17 @@ h1 {
 /* حاوية الكروت (التمرير الأفقي) */
 .services-container {
   display: flex;
-  flex-wrap: nowrap; /* لمنع الالتفاف */
-  overflow-x: auto; /* تفعيل التمرير الأفقي */
+  flex-wrap: nowrap;
+  overflow-x: auto;
   gap: 20px;
   padding: 20px;
   background-color: #e9f0ff;
-  scroll-behavior: smooth; /* تمرير سلس */
+  scroll-behavior: smooth;
 }
 
 /* شكل الكرت */
 .service-card {
-  flex: 0 0 auto; /* حجم ثابت وعدم تمدد */
+  flex: 0 0 auto;
   width: 300px;
   background-color: #fff;
   border: 2px solid #0055aa;
@@ -81,4 +81,59 @@ footer {
   background-color: #003366;
   color: white;
   margin-top: 30%;
+}
+
+/* ===== تنسيقات صفحة تواصل معنا ===== */
+
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 2px solid #0055aa;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 85, 170, 0.15);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #003366;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9fcff;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #0055aa;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #003366;
+}
+
+main h2 {
+  text-align: center;
+  color: #003366;
+  margin-top: 30px;
 }
